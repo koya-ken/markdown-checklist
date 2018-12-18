@@ -57,4 +57,4 @@ class ChecklistPostprocessor(Postprocessor):
 
 def render_item(caption, checked):
     checked = ' checked' if checked else ''
-    return '<li><input type="checkbox" disabled%s>%s</li>' % (checked, caption)
+    return '<li><input type="checkbox" %s>%s</li>' % (checked, caption)
